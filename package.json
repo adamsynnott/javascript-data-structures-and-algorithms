@@ -1,0 +1,24 @@
+{
+  "name": "javascript-data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "Refresher on data structures and algorithms implementation in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamsynnott/javascript-data-structures-and-algorithms.git"
+  },
+  "author": "Adam Synnott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamsynnott/javascript-data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/adamsynnott/javascript-data-structures-and-algorithms#readme",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}

@@ -1,5 +1,6 @@
 const ArrayStack = require('../stack-array');
 const ObjectStack = require('../stack-object');
+const WeakMapStack = require('../stack-weak-map');
 
 const testStack = (Stack) => {
   describe('Stack Array', () => {
@@ -17,6 +18,7 @@ const testStack = (Stack) => {
 
     test('pop should return the last element', () => {
       const stack = new Stack();
+      expect(stack.pop()).toBeUndefined();
       stack.push(3);
       stack.push(5);
       expect(stack.pop()).toBe(5);
@@ -33,6 +35,7 @@ const testStack = (Stack) => {
 
     test('peek should not affect the size', () => {
       const stack = new Stack();
+      expect(stack.peek()).toBeUndefined();
       stack.push(3);
       stack.push(5);
       expect(stack.peek()).toBe(5);
@@ -56,3 +59,4 @@ const testStack = (Stack) => {
 
 testStack(ArrayStack);
 testStack(ObjectStack);
+testStack(WeakMapStack);

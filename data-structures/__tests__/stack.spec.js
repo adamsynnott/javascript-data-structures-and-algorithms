@@ -1,4 +1,5 @@
 const ArrayStack = require('../stack-array');
+const ObjectStack = require('../stack-object');
 
 const testStack = (Stack) => {
   describe('Stack Array', () => {
@@ -54,3 +55,4 @@ const testStack = (Stack) => {
 };
 
 testStack(ArrayStack);
+testStack(ObjectStack);
